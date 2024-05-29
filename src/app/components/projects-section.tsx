@@ -8,65 +8,65 @@ const projectsData = [
   {
     id: 1,
     title: "Day Habits",
-    description: "Project 1 description",
+    description: "Currently under maintenance. Unavailable to see.",
     image: "/assets/NLW-Setup.jpg",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/"
+    gitUrl: "https://github.com/miguel-ozana/NLW-SETUP-2023",
+    previewUrl: "https://sweet-praline-3c77fb.netlify.app"
   },
   {
     id: 2,
     title: "Machine Learning",
-    description: "Project 1 description",
+    description: "Project about machine learning for university.",
     image: "/assets/MachineLearning.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/"
+    gitUrl: "https://github.com/miguel-ozana/website-faculdade",
+    previewUrl: "https://machinelearning-one.vercel.app/"
   },
   {
     id: 3,
     title: "FlaskAPI CRUD",
-    description: "Project 1 description",
+    description: "Only Code. No Previews. Access Github",
     image: "/assets/Projects4.jpg",
     tag: ["All", "Backend"],
-    gitUrl: "/",
-    previewUrl: "/"
+    gitUrl: "https://github.com/miguel-ozana/FlaskAPI---CRUD",
+    previewUrl: "https://github.com/miguel-ozana/FlaskAPI---CRUD"
   },
   {
     id: 4,
     title: "Discord Bot",
-    description: "Project 1 description",
+    description: "Discord Bot. Only available for github preview",
     image: "/assets/Projects3.jpg",
     tag: ["All", "Automations"],
-    gitUrl: "/",
-    previewUrl: "/"
+    gitUrl: "https://github.com/miguel-ozana/Discord-Bot",
+    previewUrl: "https://github.com/miguel-ozana/Discord-Bot"
   },
   {
     id: 5,
     title: "NFC-e",
-    description: "Project 1 description",
+    description: "Code only. No previews. Access github.",
     image: "/assets/Projects2.jpg",
     tag: ["All", "Automations"],
-    gitUrl: "/",
-    previewUrl: "/"
+    gitUrl: "https://github.com/miguel-ozana/NFC-e",
+    previewUrl: "https://github.com/miguel-ozana/NFC-e"
   },
   {
     id: 6,
     title: "Chatbot",
-    description: "Project 1 description",
+    description: "Under development. No previews. Access github.",
     image: "/assets/Chatbot.png",
     tag: ["All", "Automations"],
-    gitUrl: "/",
-    previewUrl: "/"
+    gitUrl: "https://github.com/miguel-ozana/chatbot-miceli-typescript",
+    previewUrl: "https://github.com/miguel-ozana/chatbot-miceli-typescript"
   },
   {
     id: 7,
     title: "ContainLar",
-    description: "Project 1 description",
+    description: "School project about container houses",
     image: "/assets/Containlar.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/"
+    gitUrl: "https://github.com/miguel-ozana/Containlar",
+    previewUrl: "https://containlar.netlify.app/"
   },
 ];
 
