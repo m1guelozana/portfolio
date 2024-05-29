@@ -7,35 +7,38 @@ import Image from "next/image";
 
 const ContactsSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
-  const [submissionError, setSubmissionError] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const form = e.currentTarget as HTMLFormElement;
-    const data = {
-      email: (form.elements.namedItem("email") as HTMLInputElement).value,
-      subject: (form.elements.namedItem("subject") as HTMLInputElement).value,
-      message: (form.elements.namedItem("message") as HTMLInputElement).value,
+    const form = e.currentTarget;
+  
+    const formData = new FormData(form);
+    const email = formData.get('email') as string;
+    const subject = formData.get('subject') as string;
+    const message = formData.get('message') as string;
+  
+    const data = { email, subject, message };
+    const JSONdata = JSON.stringify(data);
+    const endpoint = "/api/send";
+
+    // Form the request for sending data to the server.
+    const options = {
+      // The method is POST because we are sending data.
+      method: "POST",
+      // Tell the server we're sending JSON.
+      headers: {
+        "Content-Type": "application/json",
+      },
+      // Body of the request is the JSON data we created above.
+      body: JSONdata,
     };
 
-    try {
-      const response = await fetch('/api/send-mail', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
+    const response = await fetch(endpoint, options);
+    const resData = await response.json();
 
-      if (response.ok) {
-        setEmailSubmitted(true);
-        setSubmissionError(null);
-      } else {
-        const errorData = await response.json();
-        setSubmissionError(errorData.error || 'An error occurred while sending the email.');
-      }
-    } catch (error) {
-      setSubmissionError('An error occurred while sending the email.');
+    if (response.status === 200) {
+      console.log("Message sent.");
+      setEmailSubmitted(true);
     }
   };
 
@@ -56,10 +59,10 @@ const ContactsSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com">
+          <Link href="https://github.com/miguel-ozana">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="https://linkedin.com">
+          <Link href="https://www.linkedin.com/in/miguel-ozana-951855231/">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
@@ -123,9 +126,6 @@ const ContactsSection = () => {
             >
               Send Message
             </button>
-            {submissionError && (
-              <p className="text-red-500 text-sm mt-2">{submissionError}</p>
-            )}
           </form>
         )}
       </div>
