@@ -1,3 +1,0 @@
-# PORTFOLIO
-
-### Portfolio exemplo
