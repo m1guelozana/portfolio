@@ -54,7 +54,7 @@ const projectsData = [
     id: 6,
     title: "Chatbot",
     description: "Under development. No previews. Access github.",
-    image: "/assets/Chatbot.png",
+    image: "/assets/projetochatbot.png",
     tag: ["All", "Automations"],
     gitUrl: "https://github.com/miguel-ozana/chatbot-miceli-typescript",
     previewUrl: "https://github.com/miguel-ozana/chatbot-miceli-typescript"
@@ -63,7 +63,7 @@ const projectsData = [
     id: 7,
     title: "ContainLar",
     description: "School project about container houses",
-    image: "/assets/Containlar.png",
+    image: "/assets/projetoontainlar.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/miguel-ozana/Containlar",
     previewUrl: "https://containlar.netlify.app/"
