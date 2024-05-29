@@ -8,6 +8,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   if (req.method === 'POST') {
     try {
       const { email, subject, message } = req.body;
+
       if (!fromEmail) {
         throw new Error("FROM_EMAIL environment variable is not set");
       }
