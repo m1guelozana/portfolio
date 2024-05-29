@@ -10,7 +10,7 @@ const projectsData = [
     title: "Day Habits",
     description: "Currently under maintenance. Unavailable to see.",
     image: "/assets/NLW-Setup.jpg",
-    tag: ["All", "Web"],
+    tag: ["All", "Web", "Backend"],
     gitUrl: "https://github.com/miguel-ozana/NLW-SETUP-2023",
     previewUrl: "https://sweet-praline-3c77fb.netlify.app"
   },
