@@ -63,7 +63,7 @@ const projectsData = [
     id: 7,
     title: "ContainLar",
     description: "School project about container houses",
-    image: "/assets/projetoontainlar.png",
+    image: "/assets/projetocontainlar.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/miguel-ozana/Containlar",
     previewUrl: "https://containlar.netlify.app/"
