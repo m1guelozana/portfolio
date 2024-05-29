@@ -81,7 +81,7 @@ const AboutSection: React.FC = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I&aposm a Full stack developer with a passion for creating interactive
+            I&apos;m a Full stack developer with a passion for creating interactive
             and responsive web applications. I have experience with JavaScript,
             TypeScript, React, Node.Js, Express, Python, Django, Flask,
             Selenium, Pandas, PostgreSQL, HTML, CSS, Git, Github, and NoSQL
