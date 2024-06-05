@@ -44,16 +44,6 @@ const HeroSection = () => {
             </button>
           </div>
         </div>
-        <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] relative overflow-hidden">
-            <Image
-              className="object-cover w-ful h-full"
-              src="/assets/me.png"
-              alt="Profile Picture"
-              layout="fill"
-            />
-          </div>
-        </div>
       </div>
     </section>
   );
