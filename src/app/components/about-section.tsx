@@ -20,7 +20,7 @@ const TAB_DATA = [
         <li>Python</li>
         <li>Pandas</li>
         <li>Selenium</li>
-        <li>Rejex</li>
+        <li>ReGex</li>
       </ul>
     )
   },
